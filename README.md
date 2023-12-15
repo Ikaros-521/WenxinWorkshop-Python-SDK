@@ -8,7 +8,7 @@
 * Install wenxinworkshop SDK
 
     ```bash
-    $ pip install git+https://github.com/jm12138/WenxinWorkshop-Python-SDK
+    $ pip install git+https://github.com/Ikaros-521/WenxinWorkshop-Python-SDK
     ```
 
 * Import wenxinworkshop SDK

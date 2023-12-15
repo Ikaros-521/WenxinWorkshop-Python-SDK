@@ -135,6 +135,45 @@ class LLMAPI:
     ERNIEBot_turbo = (
         "https://aip.baidubce.com/rpc/2.0/ai_custom/v1/wenxinworkshop/chat/eb-instant"
     )
+    ERNIEBot_4_0 = (
+        "https://aip.baidubce.com/rpc/2.0/ai_custom/v1/wenxinworkshop/chat/completions_pro"
+    )
+    BLOOMZ_7B = (
+        "https://aip.baidubce.com/rpc/2.0/ai_custom/v1/wenxinworkshop/chat/bloomz_7b1"
+    )
+    LLAMA_2_7B = (
+        "https://aip.baidubce.com/rpc/2.0/ai_custom/v1/wenxinworkshop/chat/llama_2_7b"
+    )
+    LLAMA_2_13B = (
+        "https://aip.baidubce.com/rpc/2.0/ai_custom/v1/wenxinworkshop/chat/llama_2_13b"
+    )
+    LLAMA_2_70B = (
+        "https://aip.baidubce.com/rpc/2.0/ai_custom/v1/wenxinworkshop/chat/llama_2_70b"
+    )
+    QIANFAN_BLOOMZ_7B_COMPRESSED = (
+        "https://aip.baidubce.com/rpc/2.0/ai_custom/v1/wenxinworkshop/chat/qianfan_bloomz_7b_compressed"
+    )
+    QIANFAN_CHINESE_LLAMA_2_7B = (
+        "https://aip.baidubce.com/rpc/2.0/ai_custom/v1/wenxinworkshop/chat/qianfan_chinese_llama_2_7b"
+    )
+    CHATGLM2_6B_32K = (
+        "https://aip.baidubce.com/rpc/2.0/ai_custom/v1/wenxinworkshop/chat/chatglm2_6b_32k"
+    )
+    AQUILACHAT_7B = (
+        "https://aip.baidubce.com/rpc/2.0/ai_custom/v1/wenxinworkshop/chat/aquilachat_7b"
+    )
+    ERNIE_BOT_8K = (
+        "https://aip.baidubce.com/rpc/2.0/ai_custom/v1/wenxinworkshop/chat/ernie_bot_8k"
+    )
+    CODELLAMA_7B_INSTRUCT = (
+        "https://aip.baidubce.com/rpc/2.0/ai_custom/v1/wenxinworkshop/completions/codellama_7b_instruct"
+    )
+    XUANYUAN_70B_CHAT = (
+        "https://aip.baidubce.com/rpc/2.0/ai_custom/v1/wenxinworkshop/chat/xuanyuan_70b_chat"
+    )
+    CHATLAW = (
+        "https://aip.baidubce.com/rpc/2.0/ai_custom/v1/wenxinworkshop/chat/chatlaw"
+    )
 
     def __init__(
         self: "LLMAPI", api_key: str, secret_key: str, url: str = ERNIEBot
