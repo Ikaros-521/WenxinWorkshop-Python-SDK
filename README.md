@@ -1,6 +1,9 @@
 # WenxinWorkshop Python SDK
 * A third-party Python SDK for a WenxinWorkshop.
 
+# 官网
+[https://cloud.baidu.com/product/wenxinworkshop](https://cloud.baidu.com/product/wenxinworkshop)  
+
 ## Quick Start
 * Install wenxinworkshop SDK
 
