@@ -38,6 +38,7 @@ __all__ = [
     "AIStudioEmbeddingResponse",
     "get_access_token",
     "LLMAPI",
+    "AppBuilderAPI",
     "EmbeddingAPI",
     "PromptTemplateAPI",
     "AIStudioLLMAPI",
@@ -45,4 +46,4 @@ __all__ = [
 ]
 
 
-__version__ = "0.3.0"
+__version__ = "0.3.1"
