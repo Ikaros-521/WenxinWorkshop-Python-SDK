@@ -22,6 +22,7 @@ __all__ = [
     "PromptTemplateAPI",
     "AIStudioLLMAPI",
     "AIStudioEmbeddingAPI",
+    "AppBuilderAPI",
 ]
 
 
@@ -364,6 +365,56 @@ class LLMAPI:
                 except:
                     raise ValueError(response_line)
 
+
+class AppBuilderAPI:
+    AppBuilder = "https://appbuilder.baidu.com/rpc/2.0/cloud_hub/v1/ai_engine/agi_platform/v1/instance/integrated"
+
+    def __init__(
+        self: "AppBuilderAPI", app_token: str, history_enable: bool, url: str = AppBuilder
+    ) -> None:
+        self.url = url
+        # 对话ID，仅对话型应用生效
+        self.conversation_id = None
+        self.history_enable = history_enable
+
+        self.headers = {
+            'Content-Type': 'application/json',
+            'X-Appbuilder-Authorization': f'Bearer {app_token}'
+        }
+        self.timeout = 60
+
+    def __call__(
+        self: "AppBuilderAPI",
+        query: str,
+        response_mode: str,
+    ):
+        try:
+            if self.conversation_id is None:
+                data = {
+                    "query": query,
+                    "response_mode": response_mode
+                }
+            else:
+                data = {
+                    "query": query,
+                    "response_mode": response_mode,
+                    "conversation_id": self.conversation_id
+                }
+
+            response = requests.post(self.url, headers=self.headers, data=json.dumps(data), timeout=self.timeout)
+
+            response_json = response.json()
+            answer = response_json["result"]["answer"]
+
+            if self.history_enable == True:
+                if "conversation_id" in response_json["result"]:
+                    self.conversation_id = response_json["result"]["conversation_id"]
+
+            return answer
+
+        except:
+            raise ValueError(response.text)
+        
 
 class EmbeddingAPI:
     """

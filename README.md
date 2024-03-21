@@ -120,3 +120,8 @@
     # print prompt template
     print(response)
     ```
+
+# 更新日志
+
+- 2024-3-21
+    - 支持AppBuilder接口  
