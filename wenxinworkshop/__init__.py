@@ -10,7 +10,7 @@ from .types import AIStudioEmbeddingObject, AIStudioEmbeddingUsage
 from .types import AIStudioEmbeddingResult, AIStudioEmbeddingResponse
 
 from .apis import get_access_token
-from .apis import LLMAPI, EmbeddingAPI, PromptTemplateAPI
+from .apis import LLMAPI, AppBuilderAPI, EmbeddingAPI, PromptTemplateAPI
 from .apis import AIStudioLLMAPI, AIStudioEmbeddingAPI
 
 
@@ -46,4 +46,4 @@ __all__ = [
 ]
 
 
-__version__ = "0.3.1"
+__version__ = "0.3.2"
