@@ -122,6 +122,8 @@
     ```
 
 # 更新日志
+- 2024-5-22
+    - 新增 ERNIE-Speed、ERNIE-Lite、ERNIE-Tiny系列模型
 
 - 2024-3-21
     - 支持AppBuilder接口  

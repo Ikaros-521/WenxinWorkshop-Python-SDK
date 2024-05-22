@@ -175,6 +175,21 @@ class LLMAPI:
     CHATLAW = (
         "https://aip.baidubce.com/rpc/2.0/ai_custom/v1/wenxinworkshop/chat/chatlaw"
     )
+    ERNIE_SPEED_128K = (
+        "https://aip.baidubce.com/rpc/2.0/ai_custom/v1/wenxinworkshop/chat/ernie-speed-128k"
+    )
+    ERNIE_SPEED_8K = (
+        "https://aip.baidubce.com/rpc/2.0/ai_custom/v1/wenxinworkshop/chat/ernie_speed"
+    )
+    ERNIE_LITE_8K_0308 = (
+        "https://aip.baidubce.com/rpc/2.0/ai_custom/v1/wenxinworkshop/chat/ernie-lite-8k"
+    )
+    ERNIE_LITE_8K_0922 = (
+        "https://aip.baidubce.com/rpc/2.0/ai_custom/v1/wenxinworkshop/chat/eb-instant"
+    )
+    ERNIE_TINY_8K = (
+        "https://aip.baidubce.com/rpc/2.0/ai_custom/v1/wenxinworkshop/chat/ernie-tiny-8k"
+    )
 
     def __init__(
         self: "LLMAPI", api_key: str, secret_key: str, url: str = ERNIEBot
