@@ -181,7 +181,7 @@ class LLMAPI:
     ERNIE_SPEED_8K = (
         "https://aip.baidubce.com/rpc/2.0/ai_custom/v1/wenxinworkshop/chat/ernie_speed"
     )
-    ERNIE_LITE_8K_0308 = (
+    ERNIE_LITE_8K = (
         "https://aip.baidubce.com/rpc/2.0/ai_custom/v1/wenxinworkshop/chat/ernie-lite-8k"
     )
     ERNIE_LITE_8K_0922 = (

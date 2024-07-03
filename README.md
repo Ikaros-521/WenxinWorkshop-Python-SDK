@@ -122,6 +122,10 @@
     ```
 
 # 更新日志
+- 2024-7-02
+    - ERNIE-Lite-8K 模型支持
+    - 提供测试程序
+
 - 2024-5-22
     - 新增 ERNIE-Speed、ERNIE-Lite、ERNIE-Tiny系列模型
 
